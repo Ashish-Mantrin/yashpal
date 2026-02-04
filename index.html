@@ -1,156 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Resume - Yashpal Singh</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume - Yashpal Singh</title>
+<style>
+    /* General Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    body {
+        background-color: #f8f8f8;
+        font-size: 13px;
+        line-height: 1.35;
+        padding: 20px;
+    }
 
-    <style>
-        @page {
-            size: A4;
-            margin: 15mm;
+    .resume {
+        max-width: 900px;
+        margin: auto;
+        background-color: #ffffff;
+        padding: 30px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+    }
+
+    /* Header */
+    .cv-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .cv-info {
+        flex: 3;
+        min-width: 200px;
+    }
+
+    .cv-info h4 {
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .cv-info p {
+        margin: 4px 0;
+    }
+
+    .highlight {
+        font-weight: 600;
+        color: #000;
+    }
+
+    .cv-photo {
+        flex: 1;
+        text-align: right;
+        min-width: 100px;
+    }
+
+    .cv-photo img {
+        width: 100px;
+        height: 110px;
+        object-fit: cover;
+        border: 1px solid #ccc;
+    }
+
+    /* Section Headings */
+    .cv-section {
+        margin-bottom: 20px;
+    }
+
+    .cv-section h5 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #000;
+        margin-top: 18px;
+        margin-bottom: 6px;
+        border-bottom: 1px solid #000;
+        padding-bottom: 2px;
+    }
+
+    p, ul {
+        margin-bottom: 6px;
+    }
+
+    ul {
+        padding-left: 18px;
+        list-style-type: "➤ ";
+    }
+
+    li {
+        margin-bottom: 2px;
+    }
+
+    .footer-text {
+        margin-top: 6px;
+    }
+
+    /* Signature section */
+    .signature {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .signature div {
+        min-width: 150px;
+    }
+
+    .signature p {
+        margin: 4px 0;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+        .cv-header {
+            flex-direction: column;
+            align-items: flex-start;
         }
-
-        body {
-            background-color: #000000;
-            color: #000000;
-            font-family: Arial, sans-serif;
-            font-size: 13px;
-            line-height: 1.35;
+        .cv-photo {
+            text-align: left;
+            margin-top: 15px;
         }
-
-        .resume {
-            border: 1px solid #000000;
-            padding: 20px;
-            margin: auto;
-            max-width: 210mm;
-            background-color: #ffffff;
+        .signature {
+            flex-direction: column;
+            align-items: flex-start;
         }
-
-        /* Main Heading */
-        h4 {
-            font-size: 22px;
-            font-weight: 700;
-            text-transform: uppercase;
-            padding-bottom: 3px;
-            margin-bottom: 10px;
-        }
-
-        /* Section Headings */
-        h5 {
-            font-size: 16px;
-            font-weight: 600;
-            color: #000000;
-            margin-top: 18px;
-            margin-bottom: 6px;
-            border-bottom: 1px solid #000000;
-            padding-bottom: 2px;
-        }
-
-        p {
-            margin-bottom: 4px;
-        }
-
-        ul {
-            margin-bottom: 6px;
-            padding-left: 18px;
-            list-style-type: "➤ ";
-        }
-
-        li {
-            margin-bottom: 2px;
-        }
-
-        .highlight {
-            color: #000000;
-            font-weight: 600;
-        }
-
-        .photo {
-            width: 100px;
-            height: 110px;
-            object-fit: cover;
-            border: 1px solid #ccc;
-        }
-
-        .footer-text {
-            margin-top: 6px;
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
 
-<div class="resume container-fluid">
-    <div class="row">
-        <div class="col-md-9">
+<div class="resume">
+
+    <!-- Header -->
+    <div class="cv-header">
+        <div class="cv-info">
             <h4>Curriculum Vitae</h4>
             <p><strong>Yashpal Singh</strong></p>
             <p>Mob: <span class="highlight">+91 8560219076</span></p>
             <p>Email: <span class="highlight">yasharmy98@gmail.com</span></p>
         </div>
-        <div class="col-md-3 text-end">
-            <img src="photo.png" alt="Profile Photo" class="photo">
+        <div class="cv-photo">
+            <img src="photo.png" alt="Profile Photo">
         </div>
     </div>
 
-    <h5>Objective</h5>
-    <p>
-        Seeking a challenging role in the hospitality sector where I can contribute my skills,
-        maintain integrity, and support organizational growth.
-    </p>
+    <!-- Objective -->
+    <div class="cv-section">
+        <h5>Objective</h5>
+        <p>Seeking a challenging role in the hospitality sector where I can contribute my skills, maintain integrity, and support organizational growth.</p>
+    </div>
 
-    <h5>Work Experience</h5>
-    <ul>
-        <li>Six-month industrial training at Radisson Hotel, Jaipur (July 2019 – Jan 2020).</li>
-        <li>3.5 Years’ experience in Dirty Good Restaurant, New Delhi as F&B (1 Year as a Steward and 2.5 Years as a Senior Steward).</li>
-    </ul>
+    <!-- Work Experience -->
+    <div class="cv-section">
+        <h5>Work Experience</h5>
+        <ul>
+            <li>Six-month industrial training at Radisson Hotel, Jaipur (July 2019 – Jan 2020).</li>
+            <li>3.5 Years’ experience in Dirty Good Restaurant, New Delhi as F&B (1 Year as a Steward and 2.5 Years as a Senior Steward).</li>
+        </ul>
+    </div>
 
-    <h5>Educational Qualifications</h5>
-    <p><strong>Academic</strong></p>
-    <ul>
-        <li>10th – Uttarakhand Board (2013)</li>
-        <li>12th – Uttarakhand Board (2016)</li>
-    </ul>
+    <!-- Education -->
+    <div class="cv-section">
+        <h5>Educational Qualifications</h5>
+        <p><strong>Academic</strong></p>
+        <ul>
+            <li>10th – Uttarakhand Board (2013)</li>
+            <li>12th – Uttarakhand Board (2016)</li>
+        </ul>
+        <p><strong>Professional</strong></p>
+        <ul>
+            <li>1-Year Diploma in Hotel Management (All Departments) from CAIMS, Uttarakhand (2019)</li>
+        </ul>
+    </div>
 
-    <p><strong>Professional</strong></p>
-    <ul>
-        <li>1-Year Diploma in Hotel Management (All Departments) from CAIMS, Uttarakhand (2019)</li>
-    </ul>
+    <!-- Personal Details -->
+    <div class="cv-section">
+        <h5>Personal Details</h5>
+        <ul>
+            <li>Date of Birth: 01-07-1998</li>
+            <li>Gender: Male</li>
+            <li>Marital Status: Single</li>
+            <li>Nationality: Indian</li>
+            <li>Languages: English & Hindi</li>
+            <li>Father’s Name: Kushal Singh</li>
+        </ul>
+    </div>
 
-    <h5>Personal Details</h5>
-    <ul>
-        <li>Date of Birth: 01-07-1998</li>
-        <li>Gender: Male</li>
-        <li>Marital Status: Single</li>
-        <li>Nationality: Indian</li>
-        <li>Languages: English & Hindi</li>
-        <li>Father’s Name: Kushal Singh</li>
-    </ul>
+    <!-- Hobbies -->
+    <div class="cv-section">
+        <h5>Hobbies</h5>
+        <ul>
+            <li>Reading</li>
+            <li>Traveling</li>
+            <li>Volleyball</li>
+            <li>Cricket</li>
+            <li>Cooking</li>
+        </ul>
+    </div>
 
-    <h5>Hobbies</h5>
-    <ul>
-        <li>Reading</li>
-        <li>Traveling</li>
-        <li>Volleyball</li>
-        <li>Cricket</li>
-        <li>Cooking</li>
-    </ul>
+    <!-- Declaration -->
+    <div class="cv-section">
+        <h5>Declaration</h5>
+        <p class="footer-text">I hereby declare that all the above information is true to the best of my knowledge and belief.</p>
+    </div>
 
-    <h5>Declaration</h5>
-    <p class="footer-text">
-        I hereby declare that all the above information is true to the best of my knowledge and belief.
-    </p>
-
-    <div class="row mt-4">
-        <div class="col-md-6">
+    <!-- Signature -->
+    <div class="signature">
+        <div>
             <p><strong>Place:</strong> __________</p>
         </div>
-        <div class="col-md-6 text-end">
+        <div>
             <p><strong>(Yashpal Singh)</strong></p>
         </div>
     </div>
+
 </div>
 
 </body>
